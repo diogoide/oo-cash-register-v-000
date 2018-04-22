@@ -24,6 +24,7 @@ class CashRegister
       puts "After the discount, the total comes to #{total}."
     else
       @total
+    end 
   end
 
 
