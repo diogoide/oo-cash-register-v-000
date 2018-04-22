@@ -17,7 +17,6 @@ class CashRegister
 
     @cart << item_info
     @total += price * quantity
-    @@items << item
   end
 
   def apply_discount
@@ -30,7 +29,9 @@ class CashRegister
   end
 
   def items
-    @@items 
+    items = []
+    items << add_item[:item]
+    items
   end
 
 end
