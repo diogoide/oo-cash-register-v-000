@@ -30,7 +30,7 @@ class CashRegister
 
   def items
     items = []
-    items << add_item[:item]
+    items << add_item[item]
     items
   end
 
