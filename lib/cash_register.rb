@@ -8,9 +8,9 @@ class CashRegister
   end
 
 
-  def add_item(item, price, quantity = 1)
+  def add_item(title, price, quantity = 1)
     item_info = {}
-    item_info[:name] = item
+    item_info[:title] = title
     item_info[:price] = price
     item_info[:quantity] = quantity
 
