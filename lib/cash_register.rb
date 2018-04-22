@@ -5,6 +5,7 @@ class CashRegister
     @total = 0
     @discount = discount
     @cart = []
+    @@items = []
   end
 
 
@@ -16,6 +17,7 @@ class CashRegister
 
     @cart << item_info
     @total += price * quantity
+    @@items << item 
   end
 
   def apply_discount
@@ -28,7 +30,8 @@ class CashRegister
   end
 
   def items
-
+    items = []
+    items = 
   end
 
 end
